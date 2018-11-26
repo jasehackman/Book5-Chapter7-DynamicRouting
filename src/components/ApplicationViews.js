@@ -11,7 +11,7 @@ import OwnerManager from "../modules/OwnerManager"
 import LocationManager from "../modules/LocationManager"
 import EmployeeManager from "../modules/EmployeeManager"
 
-import AnimalDetail from './animal/AnimalDetail'
+import AnimalDetail from './animals/AnimalDetail'
 
 
 class ApplicationViews extends Component {
