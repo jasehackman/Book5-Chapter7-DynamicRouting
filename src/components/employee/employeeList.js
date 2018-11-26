@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { Link } from "react-router-dom";
+
 
 
 class EmployeeList extends Component {
@@ -9,6 +11,8 @@ class EmployeeList extends Component {
                 this.props.employees.map(employee =>
                     <div key={employee.id}>
                         <p>{employee.name}</p>
+                        <Link className="nav-link" to={`/employees/${employee.id}`}>Details</Link>
+
                         <a href="#"
                           onClick={() => this.props.delete("employees", employee.id)}
                           className="card-link">Delete</a>
